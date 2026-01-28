@@ -1,35 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {margin: 0;
+              background-color: darkblue;
+              height: 100vh;}
+        * {box-sizing: border-box;}
+        .hlavička {background-image: url("norge.jpg");
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   background-position: center;
+                   display: flex;
+                   justify-content: center;
+                   padding: 100px;}
+        .norge {color: azure;
+                width: 50vw;
+                display: flex;
+                justify-content: center;}
+        a:hover {font-size: 110%;
+                 color: violet;}
 
-        <a href="https://no.wikipedia.org/wiki/Aurora_polaris" class="kartodkaz">
-        <div class="o_karta3">
+        .karty {display: flex;
+                justify-content: space-around;
+                height: 60%;}
+
+        .odkaz_karty {display: flex;
+                      justify-content: space-around;
+                      height: 540px;
+                      margin-top: 40px;
+                      margin-left: 14%;
+                      margin-right: 14%;
+                      a {text-decoration: none;
+                         transition: none;}}
+
+        .karta1 {box-sizing: border-box;
+                background-color: azure;
+                border-radius: 50px;
+                width: 20%;
+                background-image: url("Norway_mountains.jpg");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;}
+
+        .o_karta1 {box-sizing: border-box;
+                   background-color: azure;
+                   border-radius: 50px;
+                   width: 400px;
+                   height: 100%;
+                   background-image: url("oslo.png");
+                   background-position: top;
+                   background-repeat: no-repeat;
+                   background-size: contain;}
+
+        .karta2 {box-sizing: border-box;
+                background-color: azure;
+                border-radius: 50px;
+                width: 20%;
+                background-image: url("Bergen.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                .hory_text {display: flex;
+                            margin-bottom: 18.5%;}}
+        
+        .o_karta2 {box-sizing: border-box;
+                   background-color: azure;
+                   border-radius: 50px;
+                   width: 400px;
+                   height: 100%;
+                   background-image: url("opera.png");
+                   background-position: top;
+                   background-repeat: no-repeat;
+                   background-size: contain;}
+
+        .karta3 {box-sizing: border-box;
+                background-color: azure;
+                border-radius: 50px;
+                width: 20%;
+                background-image: url("fjord.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                .hory_text {display: flex;
+                            margin-bottom: 18.5%;}}
+
+        .o_karta3 {box-sizing: border-box;
+                   background-color: azure;
+                   border-radius: 50px;
+                   width: 400px;
+                   height: 100%;
+                   background-image: url("aurora.png");
+                   background-position: top;
+                   background-repeat: no-repeat;
+                   background-size: contain;}
+
+        .karta4 {box-sizing: border-box;
+                background-color: azure;
+                border-radius: 50px;
+                width: 20%;
+                background-image: url("norsk.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                .hory_text {display: flex;
+                            margin-bottom: 18.5%;}}
+
+        .info {margin: 10%;
+               margin-top: 70%;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        .odkaz_infobox {display: flex;
+                        height: 100%;
+                        margin-left: 30px;
+                        margin-right: 45px;
+                        flex-direction: column;}
+        .odkaz_info_nadpis {display: flex;
+                            margin-top: 265px;
+                            font-size: 30px;
+                            color: black;}
+        .odkaz_info {color: black;}
+
+        .hory {color: black;
+               font-size: 180%;}
+
+        .hory_text {color: black;}
+
+        .tlačítko {box-sizing: border-box;
+                   background-color:darkblue;
+                   border-top-left-radius: 0px;
+                   border-top-right-radius: 0px;
+                   border-bottom-left-radius: 100%;
+                   border-bottom-right-radius: 100%;
+                   border-width: 10px;
+                   border-color: darkblue;
+                   width: 100%;
+                   text-align: center;
+                   transition-duration: 0.3s;
+                   margin-top: 11%;
+                   padding-top: 2%;
+                   padding-bottom: 2%;
+                   a {font-size: 140%;
+                      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                      text-decoration: none;
+                      font-style:unset;
+                      padding-top: 30px;}}
+
+        .tlačítko:hover {background-color: aqua;
+                         a {color: darkblue;}}
+
+        .nadpis {color: rgb(165, 42, 42);
+                 font-size: 100px;
+                 text-shadow: 0 0 5px rgb(255, 255, 255),
+                              0 0 10px rgb(255, 255, 255),
+                              0 0 20px rgb(255, 255, 255),
+                              0 0 40px rgb(255, 255, 255);}
+        h1 {padding-left: 6%;
+            padding-top: 3%;
+            margin-bottom: 0%;
+            color: whitesmoke;
+            font-family: cursive;
+            font-size: 250%;}
+        p {color: whitesmoke;
+           font-size: 130%;}
+        .text {padding-left: 6%;
+               padding-bottom: 5%;
+               padding-right: 20%;
+               margin-top: 0.4%;}
+        a {color:aqua;
+           transition: 0.2s}
+    </style>
+</head>
+
+<body>
+    <div class="hlavička">
+        <div class="norge">
+            <p class="nadpis">Norge</p>
+        </div>
+    </div>
+    <div class="stať">
+        <h1>Hei!</h1>
+        <p class="text">Jeg heter Hanne og er sytten år gammel. Jeg har lært norsk i to år nå, og jeg har virkelig forelsket meg i språket. Jeg drømmer om å bo i Norge en dag, men desverre har jeg ikke så mye håp. Hvis du vil vite mer om Norge, klikk <a href="https://no.wikipedia.org/wiki/Norge">her</a>!</p>
+        <p></p>
+    </div>
+    <div class="karty">
+        <div class="karta1">
             <div class="info">
-                <h1 class="hory">Nordlys</h1>
-                <p class="hory_text">Nordlyset i Nord-Norge danser over himmelen i grønne og lilla slør. Et magisk naturfenomen som gjør vintermørket uforglemmelig.</p>
+                <h1 class="hory">De norske fjellene</h1>
+                <p class="hory_text">Fjellene i Norge er en av de meste besøke turistattraksjonene. Deres snødekte topper fascinerer stadig alle, ikke bare naturelskere, og er alltid et sted hvor man kan fokusere på tenkene sine.</p>
+                <div class="tlačítko">
+                    <a href="https://no.tripadvisor.com/Attractions-g190455-Activities-c57-t66-Norway.html">Vis mer</a>
+                </div>
             </div>
         </div>
-        </a>
+        <div class="karta2">
+            <div class="info">
+                <h1 class="hory">Byer</h1>
+                <p class="hory_text">Norske byer forener kultur og storslått natur. Fra Oslos moderne fjordliv til Bergens fargerike gater og Tromsøs nordlys – Norge frister til oppdagelse.</p>
+                <div class="tlačítko">
+                    <a href="https://no.wikipedia.org/wiki/Liste_over_norske_byer">Vis mer</a>
+                </div>
+            </div>
+        </div>
+        <div class="karta3">
+            <div class="info">
+                <h1 class="hory">Fjorder</h1>
+                <p class="hory_text">Norske fjorder byr på dramatisk skjønnhet og stille magi. Bratte fjell, dype blå vann og små vesničky skaper et landskap som må oppleves med egne øyne.</p>
+                <div class="tlačítko">
+                    <a href="https://www.nordicvisitor.com/norway/fjord-tours/?utm_source=msn&utm_medium=cpc&utm_term=norwegian%20fjords&utm_content=norwegian%20fjords%20+%2001&utm_campaign=NO%20m27229%20norwegian%20fjords&msclkid=24a4c2c9407d151cb55aabae11bc7708">Vis mer</a>
+                </div>
+            </div>
+        </div>
+        <div class="karta4">
+            <div class="info">
+                <h1 class="hory">Det norske språket</h1>
+                <p class="hory_text">Norsk er et vakkert og melodisk språk med en naturlig rytme. Det bærer i seg både poesi, enkelhet og nærheten til naturen som preger Norge.</p>
+                <div class="tlačítko">
+                    <a href="https://no.wikipedia.org/wiki/Norsk">Vis mer</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-.o_karta3 {box-sizing: border-box;
-                background-color: azure;
-                border-radius: 50px;
-                width: 60%;
-                height: 100%;
-                background-image: url("aurora.png");
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: contain;
-                .hory_text {display: flex;
-                            margin-bottom: 18.5%;}}
-
-.o_karta2 {box-sizing: border-box;
-                background-color: azure;
-                border-radius: 50px;
-                width: 60%;
-                height: 100%;
-                background-image: url("opera.png");
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: contain;
-                .hory_text {display: flex;
-                            margin-bottom: 18.5%;}}
+<div class="odkaz_karty">
+    <a href="https://www.booking.com/searchresults.cs.html?ss=Oslo%2C+Oslo+County%2C+Norway&efdco=1&label=msn-0_mF5*Th6qL1MFk2YivIDw-80608133315423%3Atikwd-80608309493174%3Aloc-51%3Aneo%3Amte%3Alp252971%3Adec%3Aqsbooking+ubytovani&aid=2369666&lang=cs&sb=1&src_elem=sb&src=index&dest_id=-273837&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=58bf438ad190026d&ac_meta=GhA1OGJmNDM4YWQxOTAwMjZkIAAoATICZW46BW9zYWxv&group_adults=2&no_rooms=1&group_children=0" class="kartodkaz">
+        <div class="o_karta1">
+            <div class="odkaz_infobox">
+                <h1 class="odkaz_info_nadpis">Booking hotellene</h1>
+                <p class="odkaz_info">Hoteller i Oslo på Booking gir deg komfort midt i byen. Enten du velger luksus eller budsjett, bor du nær kultur, fjord og byliv.</p>
+            </div>
+        </div>
+    </a>
+    <a href="https://www.operaen.no/" class="kartodkaz">
+        <div class="o_karta2">
+            <div class="odkaz_infobox">
+                <h1 class="odkaz_info_nadpis">Operaen i Oslo</h1>
+                <p class="odkaz_info">Operaen i Oslo er et arkitektonisk mesterverk ved fjorden. Her møtes musikk, kunst og utsikt i en helt unik opplevelse.</p>
+            </div>
+        </div>
+    </a>
+    <a href="https://no.wikipedia.org/wiki/Aurora_polaris" class="kartodkaz">
+        <div class="o_karta3">
+            <div class="odkaz_infobox">
+                <h1 class="odkaz_info_nadpis">Nordlys</h1>
+                <p class="odkaz_info">Nordlyset i Nord-Norge danser over himmelen i grønne og lilla slør. Et magisk naturfenomen som gjør vintermørket uforglemmelig.</p>
+            </div>
+        </div>
+    </a>
+</body>
+</html>
