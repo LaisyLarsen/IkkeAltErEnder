@@ -1,0 +1,35 @@
+
+        <a href="https://no.wikipedia.org/wiki/Aurora_polaris" class="kartodkaz">
+        <div class="o_karta3">
+            <div class="info">
+                <h1 class="hory">Nordlys</h1>
+                <p class="hory_text">Nordlyset i Nord-Norge danser over himmelen i grønne og lilla slør. Et magisk naturfenomen som gjør vintermørket uforglemmelig.</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+
+.o_karta3 {box-sizing: border-box;
+                background-color: azure;
+                border-radius: 50px;
+                width: 60%;
+                height: 100%;
+                background-image: url("aurora.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                .hory_text {display: flex;
+                            margin-bottom: 18.5%;}}
+
+.o_karta2 {box-sizing: border-box;
+                background-color: azure;
+                border-radius: 50px;
+                width: 60%;
+                height: 100%;
+                background-image: url("opera.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                .hory_text {display: flex;
+                            margin-bottom: 18.5%;}}
